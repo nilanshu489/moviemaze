@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import MovieSearch from './MovieSearch';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app-bg">
+      <header className="hero-header">
+        <h1>🎬 Movie Library!</h1>
+        <p>Discover, search, and fall in love with movies</p>
       </header>
+      <MovieSearch />
+      <footer className="footer">
+        <p>Made with 🤍 for SQAC Club Recruitment 2025</p>
+      </footer>
     </div>
   );
 }
